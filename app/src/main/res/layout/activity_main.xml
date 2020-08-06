@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="373dp"
+        android:layout_height="427dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/jerry" />
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="124dp"
+            android:layout_height="142dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/jerry" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="High Score: 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Time left:20s"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="hideimages"
+        android:text="START"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
